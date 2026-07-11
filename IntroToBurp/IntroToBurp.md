@@ -66,7 +66,7 @@ Through this exercise, participants gain practical experience using Burp Suite's
 
 Once launched, picoCTF provisions a temporary web application and provides a dedicated URL for testing.
 
-![[Images/01-launch-instance.png]]
+![Launch Instance](Images/01-launch-instance.png)
 
 ---
 
