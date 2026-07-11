@@ -66,7 +66,7 @@ Through this exercise, participants gain practical experience using Burp Suite's
 
 Once launched, picoCTF provisions a temporary web application and provides a dedicated URL for testing.
 
-![Launch Instance](Images/01-launch-instance.png)
+![Launch Instance](Images/01.png)
 
 ---
 
@@ -84,7 +84,7 @@ The application contains several fields including:
 
 At this point no obvious vulnerability is visible from the user interface.
 
-![[02-registration-page.png]]
+![Launch Instance](Images/02-registration-page.png)
 
 ---
 
@@ -96,11 +96,11 @@ A temporary project was selected followed by the default configuration.
 
 This creates an intercepting proxy that sits between the browser and the web application.
 
-![[Pasted image 20260711153731.png]]
+![Launch Instance](Images/03-project.png)
 
-![[Pasted image 20260711153754.png]]
+![Launch Instance](Images/04-default-config.png)
 
-![[Pasted image 20260711153812.png]]
+![Launch Instance](Images/05-burp-dashboard)
 
 ---
 
@@ -112,7 +112,7 @@ The registration itself is not the objective of the challenge.
 
 Instead, this action generates HTTP requests that Burp Suite can inspect.
 
-![[Pasted image 20260711153948.png]]
+![Launch Instance](Images/06.png)
 
 ---
 
@@ -132,7 +132,8 @@ OTP Verification
 Dashboard
 ```
 
-![[Pasted image 20260711154002.png]]
+![Launch Instance](Images/07.png)
+
 
 ---
 
@@ -143,7 +144,7 @@ Before submitting the OTP, **Intercept** was enabled inside Burp Suite.
 > [!note]
 > Every outgoing request is now paused before reaching the server.
 
-![[Pasted image 20260711154029.png]]
+![Launch Instance](Images/08.png)
 
 ---
 
@@ -166,7 +167,7 @@ The captured request also included:
 - POST Body
 - Session Information
 
-![[Pasted image 20260711154132.png]]
+![Launch Instance](Images/09.png)
 
 ---
 
@@ -176,7 +177,7 @@ Instead of forwarding the request immediately, it was sent to **Repeater**.
 
 Repeater allows requests to be modified and replayed multiple times without interacting with the browser.
 
-![[Pasted image 20260711154146.png]]
+![Launch Instance](Images/10.png)
 
 ---
 
@@ -192,7 +193,7 @@ Invalid OTP
 
 This confirms that the server validates the supplied OTP value.
 
-![[Pasted image 20260711154159.png]]
+![Launch Instance](Images/11.png)
 
 ---
 
@@ -214,7 +215,7 @@ Modified request : Remove the opt=1234
 
 The modified request was then replayed.
 
-![[Pasted image 20260711154213.png]]
+![Launch Instance](Images/12.png)
 
 ---
 
@@ -227,7 +228,7 @@ The server returned the challenge flag.
 > [!success]
 > Challenge Solved ✅
 
-![[Pasted image 20260711154516.png]]
+![Launch Instance](Images/13.png)
 
 ---
 
