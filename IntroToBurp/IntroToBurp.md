@@ -100,7 +100,7 @@ This creates an intercepting proxy that sits between the browser and the web app
 
 ![Launch Instance](Images/04-default-config.png)
 
-![Launch Instance](Images/05-burp-dashboard)
+![Launch Instance](Images/05-burp-dashboard.png)
 
 ---
 
