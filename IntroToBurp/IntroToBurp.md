@@ -84,7 +84,7 @@ The application contains several fields including:
 
 At this point no obvious vulnerability is visible from the user interface.
 
-![Launch Instance](Images/02-registration-page.png)
+![Launch Instance](Images/02.png)
 
 ---
 
